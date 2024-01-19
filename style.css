@@ -66,6 +66,55 @@ form div input.e {
     color: blue;
     font-weight: 900;
     background: white;
+        animation: anim 3s;
+    border-radius: 10px;
+@keyframes anim{
+    0%{
+        opacity: 0;
+        --clr:#1d1d1d ;
+    }
+        10%{
+        opacity: 0.9;
+        --clr:#a7a7a7
+            transform: scale 50%;
+    }
+        20%{
+        opacity: 0;
+        --clr:#848484 ;
+    }
+        30%{
+        opacity: 0;
+            --clr:#9a9a9a ;
+    }
+        40%{
+        opacity: 0.7;
+            --clr:#6c6c6c ;
+    }
+        50%{
+        opacity: 0.5;
+            --clr:#7c7c7c ;
+    }
+        60%{
+        opacity: 0;
+            --clr:#9f9f9f ;
+    }
+        70%{
+        opacity: 0.9;
+            --clr:#6c6c6c ;
+    }
+        80%{
+        opacity: 0.7;
+            --clr:#ffffff ;
+    }
+        90%{
+        opacity: 0.5;
+            --clr:#9b9b9b ;
+    }
+        100%{
+        opacity: 1;
+            --clr:rgba(23, 7, 7, 0.31) ;
+    }
+}
 
 }
 
