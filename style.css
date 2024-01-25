@@ -62,21 +62,22 @@ form div input.e {
     font-weight: 800;
 }
 
-.calculator form input:hover {
-    color: blue;
-    font-weight: 900;
-    background: white;
-        animation: anim 3s;
+.calculator  input:hover {
+    color: #ffce00;
+    font-weight: 80;
+    background: #ff0000;
+        animation: anim 8s;
     border-radius: 10px;
 @keyframes anim{
     0%{
-        opacity: 0;
+        opacity: 7.0;
         --clr:#1d1d1d ;
     }
         10%{
-        opacity: 0.9;
+        opacity: 2.9;
         --clr:#a7a7a7
             transform: scale 50%;
+        color: aqua;
     }
         20%{
         opacity: 0;
@@ -89,6 +90,7 @@ form div input.e {
         40%{
         opacity: 0.7;
             --clr:#6c6c6c ;
+
     }
         50%{
         opacity: 0.5;
@@ -112,12 +114,63 @@ form div input.e {
     }
         100%{
         opacity: 1;
-            --clr:rgba(23, 7, 7, 0.31) ;
+            --clr:#f5ff00 ;
     }
 }
 
 }
+.input:hover::after{
+    content: "";
 
+    filter: blur(0.9em);
+    animation: anim 5s;
+}
+@keyframes anim{
+    0%{
+        opacity: 0;
+        --clr:#1800cc ;
+    }
+        10%{
+        opacity: 0.9;
+        --clr:#1fcc00;
+    }
+        20%{
+        opacity: 0;
+        --clr:#1800cc ;
+    }
+        30%{
+        opacity: 0;
+            --clr:#64bc9d ;
+    }
+        40%{
+        opacity: 0.7;
+            --clr:#1800cc ;
+    }
+        50%{
+        opacity: 0.5;
+            --clr:#cc0000 ;
+    }
+        60%{
+        opacity: 0;
+            --clr:#cc0000 ;
+    }
+        70%{
+        opacity: 0.9;
+            --clr:#1800cc ;
+    }
+        80%{
+        opacity: 0.7;
+            --clr:#1800cc ;
+    }
+        90%{
+        opacity: 0.5;
+            --clr:#1800cc ;
+    }
+        100%{
+        opacity: 1;
+            --clr:#1800cc ;
+    }
+}
 form .display {
     display: flex;
     justify-content: flex-end;
